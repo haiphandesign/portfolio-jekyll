@@ -21,7 +21,7 @@ menu_settings:
 footer_settings:
   logo_image: 
   logo_width: 200
-  footer_tagline: A beautiful, minimal two-column portfolio Jekyll theme
+  footer_tagline: multidisciplinary-designer based in melbourne. work international.
 
 grid_settings:
   overlay_opacity: 0.8
@@ -89,10 +89,10 @@ font_settings:
     weight: 700
     letter_spacing: -0.02
   menu:
-    small_size: 30
-    medium_size: 15
-    large_size: 17
-    weight: 600
+    small_size: 3
+    medium_size: .75
+    large_size: 1
+    weight: normal
     letter_spacing: 0
   grid_item_title:
     small_size: 22
