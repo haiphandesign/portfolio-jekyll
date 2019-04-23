@@ -7,9 +7,9 @@ collections:
   posts:
     output: true
     permalink: /blog/:slug
-  projects:
+  works:
     output: true
-    permalink: /project/:slug
+    permalink: /work/:slug
 
 defaults:
   -
@@ -32,9 +32,9 @@ defaults:
   -
     scope:
       path: ""
-      type: "projects"
+      type: "works"
     values:
-      layout: "project"
+      layout: "work"
 
 markdown: kramdown
 

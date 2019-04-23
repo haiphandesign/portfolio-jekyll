@@ -1,5 +1,6 @@
 basic_settings:
-  site_title: Duet
+  site_title: Hai Phan.
+  site_description: Multidisciplinary Designer 
   favicon_image: /images/favicon.png
 
 header_settings:
@@ -8,8 +9,8 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'Projects'
-      url: '/'
+    - title: 'Works'
+      url: '/works/'
     - title: 'Blog'
       url: '/blog/'
     - title: 'About'
@@ -63,20 +64,22 @@ social_settings:
 color_settings:
   background_color: '#ffffff'
   background_alt_color: '#f4f5f6'
-  text_dark_color: '#2A2F36'
-  text_medium_color: '#6C7A89'
-  text_light_color: '#ABB7B7'
-  accent_color: '#F2784B'
+  text_dark_color: '#292929'
+  text_regular_color: '#292929'
+  text_light_color: 'darkgray'
+  accent_color: '#d50f25'
   border_color: '#dddddd'
   overlay_background_color: '#F2784B'
   overlay_text_color: '#ffffff'
   overlay_accent_color: '#2A2F36'
   error_color: '#D64541'
+  grid_color: '#eeeeee'
 
 font_settings:
   font_embed: '<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">'
   title_font: '"Muli", sans-serif'
   body_font: '"Muli", sans-serif'
+  root_size: 15
   regular_weight: 400
   bold_weight: 600
   site_title:
@@ -104,9 +107,9 @@ font_settings:
     weight: 400
     letter_spacing: 0
   h1:
-    small_size: 25
-    medium_size: 35
-    large_size: 45
+    small_size: 2
+    medium_size: 2.5
+    large_size: 3
     weight: 700
     letter_spacing: -0.02
     line_height: 1.2
@@ -146,12 +149,12 @@ font_settings:
     letter_spacing: 0
     line_height: 1.6
   p:
-    small_size: 15
-    medium_size: 17
-    large_size: 19
+    small_size: 1
+    medium_size: 1.25
+    large_size: 1.5
     weight: 400
     letter_spacing: 0
-    line_height: 1.6
+    line_height: 1.5
   blockquote:
     small_size: 25
     medium_size: 35

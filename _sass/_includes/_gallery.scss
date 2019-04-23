@@ -10,11 +10,11 @@
 	max-width: 90%;
 	margin: 20px auto;
 
-	@include mq(tabletp) {
+	@include breakpoint(sm) {
 		margin: 30px auto;
 	}
 
-	@include mq(laptop) {
+	@include breakpoint(lg) {
 		margin: 40px auto;
 	}
 
@@ -120,7 +120,7 @@
 			width: 33.33%;
 		}
 
-		@include mq(tabletp) {
+		@include breakpoint(sm) {
 
 			.gallery__item {
 				width: 25%;
@@ -134,14 +134,14 @@
 			width: 33.33%;
 		}
 
-		@include mq(tabletp) {
+		@include breakpoint(sm) {
 
 			.gallery__item {
 				width: 25%;
 			}
 		}
 
-		@include mq(tabletl) {
+		@include breakpoint(md) {
 
 			.gallery__item {
 				width: 20%;
@@ -155,21 +155,21 @@
 			width: 33.33%;
 		}
 
-		@include mq(tabletp) {
+		@include breakpoint(sm) {
 
 			.gallery__item {
 				width: 25%;
 			}
 		}
 
-		@include mq(tabletl) {
+		@include breakpoint(md) {
 
 			.gallery__item {
 				width: 20%;
 			}
 		}
 
-		@include mq(laptop) {
+		@include breakpoint(lg) {
 
 			.gallery__item {
 				width: 16.66%;

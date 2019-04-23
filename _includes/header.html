@@ -1,6 +1,11 @@
+<div class="background-grids">
+	<div class="background-grid"></div>
+	<div class="background-grid"></div>
+	<div class="background-grid"></div>
+</div>
 <header class="header">
 
-	<div class="wrap">
+	<div class="wrap header__wrap">
 
 		{% if site.data.settings.header_settings.logo_image %}
 		<a href="/" class="header__logo">
@@ -8,7 +13,8 @@
 		</a>
 		{% else %}
 		<a href="/" class="header__title">
-			{{ site.data.settings.basic_settings.site_title }}
+			<h1>{{ site.data.settings.basic_settings.site_title }}</h1>
+			<p>{{ site.data.settings.basic_settings.site_description }}</p>
 		</a>
 		{% endif %}
 

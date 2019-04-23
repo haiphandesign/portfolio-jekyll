@@ -1,6 +1,6 @@
 // - - - - - - - - - - - - - - - - - -
 
-// Single page/post/project
+// Single page/post/work
 
 // - - - - - - - - - - - - - - - - - -
 
@@ -8,7 +8,7 @@
 	
 	h1 {
 		
-		@include mq(tabletp) {
+		@include breakpoint(sm) {
 			white-space: pre-line;
 		}
 	}
@@ -20,7 +20,7 @@
 
 .content-wrap {
 
-	@include mq(tabletp) {
+	@include breakpoint(sm) {
 		max-width: 90%;
 		margin: 0 auto;
 	}
@@ -35,17 +35,17 @@
 		padding-right: 30px;
 		max-width: 500px;
 
-		@include mq(tabletp) {
+		@include breakpoint(sm) {
 			padding-left: 0;
 			padding-right: 0;
 			max-width: 70%;
 		}
 
-		@include mq(tabletl) {
+		@include breakpoint(md) {
 			max-width: 65%;
 		}
 
-		@include mq(laptop) {
+		@include breakpoint(lg) {
 			max-width: 60%;
 		}
 	}
@@ -55,7 +55,7 @@
 		width: calc(100vw - 60px);
 		max-width: 440px;
 
-		@include mq(tabletp) {
+		@include breakpoint(sm) {
 			margin-top: 40px;
 			margin-bottom: 40px;
 			margin-left: auto;
@@ -64,11 +64,11 @@
 			max-width: 70%;
 		}
 
-		@include mq(tabletl) {
+		@include breakpoint(md) {
 			max-width: 65%;
 		}
 
-		@include mq(laptop) {
+		@include breakpoint(lg) {
 			max-width: 60%;
 		}
 	}
@@ -78,11 +78,11 @@
 		max-width: 90%;
 		margin: 20px auto;
 
-		@include mq(tabletp) {
+		@include breakpoint(sm) {
 			margin: 30px auto;
 		}
 
-		@include mq(laptop) {
+		@include breakpoint(lg) {
 			margin: 40px auto;
 		}
 	}
@@ -107,16 +107,16 @@
 		width: 100%;
 		max-width: 90%;
 
-		@include mq(tabletp) {
+		@include breakpoint(sm) {
 			margin: 30px auto;
 			max-width: 70%;
 		}
 
-		@include mq(tabletl) {
+		@include breakpoint(md) {
 			max-width: 65%;
 		}
 
-		@include mq(laptop) {
+		@include breakpoint(lg) {
 			margin: 40px auto;
 			max-width: 60%;
 		}
@@ -130,22 +130,22 @@
 		line-height: $p-lineheight;
 		overflow: auto;
 
-		@include mq(tabletp) {
+		@include breakpoint(sm) {
 			font-size: $p-medium*0.85;
 		}
 
-		@include mq(laptop) {
+		@include breakpoint(lg) {
 			font-size: $p-large*0.85;
 		}
 
 		.highlight {
 			padding: 20px;
 
-			@include mq(tabletp) {
+			@include breakpoint(sm) {
 				padding: 30px;
 			}
 
-			@include mq(laptop) {
+			@include breakpoint(lg) {
 				padding: 40px;
 			}
 		}
@@ -170,12 +170,12 @@
 			font-size: $p-small;
 			font-weight: $p-weight;
 
-			@include mq(tabletp) {
+			@include breakpoint(sm) {
 				padding: 15px;
 				font-size: $p-medium;
 			}
 
-			@include mq(laptop) {
+			@include breakpoint(lg) {
 				padding: 20px;
 				font-size: $p-large;
 			}
@@ -196,11 +196,11 @@
 	max-width: 90%;
 	margin: 20px auto;
 
-	@include mq(tabletp) {
+	@include breakpoint(sm) {
 		margin: 30px auto;
 	}
 
-	@include mq(laptop) {
+	@include breakpoint(lg) {
 		margin: 40px auto;
 	}
 

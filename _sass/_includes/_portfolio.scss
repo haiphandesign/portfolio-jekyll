@@ -14,16 +14,15 @@
 
 .portfolio-item {
 	position: relative;
-	padding: $grid-spacing/2;
 	float: left;
-	width: 50%;
+	margin: 0 0 30px 0;
 }
 
 .portfolio-item__link {
 	position: relative;
 	display: block;
 
-	@include mq(tabletl) {
+	@include breakpoint(md) {
 
 		&:hover {
 
@@ -65,11 +64,11 @@
 	font-weight: $grid-item-title-weight;
 	letter-spacing: $grid-item-title-spacing;
 
-	@include mq(tabletp) {
+	@include breakpoint(sm) {
 		font-size: $grid-item-title-medium;
 	}
 
-	@include mq(laptop) {
+	@include breakpoint(lg) {
 		font-size: $grid-item-title-large;
 	}
 }
@@ -81,11 +80,11 @@
 	font-weight: $grid-item-subtitle-weight;
 	letter-spacing: $grid-item-subtitle-spacing;
 
-	@include mq(tabletp) {
+	@include breakpoint(sm) {
 		font-size: $grid-item-subtitle-medium;
 	}
 
-	@include mq(laptop) {
+	@include breakpoint(lg) {
 		font-size: $grid-item-subtitle-large;
 	}
 }

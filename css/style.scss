@@ -19,8 +19,10 @@ $background-alt-color: {{ site.data.settings.color_settings.background_alt_color
 $border-color: {{ site.data.settings.color_settings.border_color }};
 
 $text-dark-color: {{ site.data.settings.color_settings.text_dark_color }};
-$text-medium-color: {{ site.data.settings.color_settings.text_medium_color }};
+$text-regular-color: {{ site.data.settings.color_settings.text_regular_color }};
 $text-light-color: {{ site.data.settings.color_settings.text_light_color }};
+
+$grid-color: {{ site.data.settings.color_settings.grid_color }};
 
 $accent-color: {{ site.data.settings.color_settings.accent_color }};
 
@@ -41,6 +43,8 @@ $bold-weight: {{ site.data.settings.font_settings.bold_weight }};
 
 
 // Typography
+
+$root-size: {{ site.data.settings.font_settings.root_size }}px;
 
 $sitetitle-small: {{ site.data.settings.font_settings.site_title.small_size }}px;
 $sitetitle-medium: {{ site.data.settings.font_settings.site_title.medium_size }}px;
@@ -66,11 +70,11 @@ $grid-item-subtitle-large: {{ site.data.settings.font_settings.grid_item_subtitl
 $grid-item-subtitle-weight: {{ site.data.settings.font_settings.grid_item_subtitle.weight }};
 $grid-item-subtitle-spacing: {{ site.data.settings.font_settings.grid_item_subtitle.letter_spacing }}em;
 
-$h1-small: {{ site.data.settings.font_settings.h1.small_size }}px;
-$h1-medium: {{ site.data.settings.font_settings.h1.medium_size }}px;
-$h1-large: {{ site.data.settings.font_settings.h1.large_size }}px;
+$h1-small: {{ site.data.settings.font_settings.h1.small_size }}rem;
+$h1-medium: {{ site.data.settings.font_settings.h1.medium_size }}rem;
+$h1-large: {{ site.data.settings.font_settings.h1.large_size }}rem;
 $h1-weight: {{ site.data.settings.font_settings.h1.weight }};
-$h1-spacing: {{ site.data.settings.font_settings.h1.letter_spacing }}em;
+$h1-spacing: {{ site.data.settings.font_settings.h1.letter_spacing }}rem;
 $h1-lineheight: {{ site.data.settings.font_settings.h1.line_height }};
 
 $h2-small: {{ site.data.settings.font_settings.h2.small_size }}px;
@@ -108,11 +112,11 @@ $h6-weight: {{ site.data.settings.font_settings.h6.weight }};
 $h6-spacing: {{ site.data.settings.font_settings.h6.letter_spacing }}em;
 $h6-lineheight: {{ site.data.settings.font_settings.h6.line_height }};
 
-$p-small: {{ site.data.settings.font_settings.p.small_size }}px;
-$p-medium: {{ site.data.settings.font_settings.p.medium_size }}px;
-$p-large: {{ site.data.settings.font_settings.p.large_size }}px;
+$p-small: {{ site.data.settings.font_settings.p.small_size }}rem;
+$p-medium: {{ site.data.settings.font_settings.p.medium_size }}rem;
+$p-large: {{ site.data.settings.font_settings.p.large_size }}rem;
 $p-weight: {{ site.data.settings.font_settings.p.weight }};
-$p-spacing: {{ site.data.settings.font_settings.p.letter_spacing }}em;
+$p-spacing: {{ site.data.settings.font_settings.p.letter_spacing }}rem;
 $p-lineheight: {{ site.data.settings.font_settings.p.line_height }};
 
 $blockquote-small: {{ site.data.settings.font_settings.blockquote.small_size }}px;
@@ -141,6 +145,10 @@ $grid-spacing: {{ site.data.settings.grid_settings.grid_spacing }}px;
 
 @import "_basic";
 
+@import url('bootstrap-grid.css');
+
+@import "_includes/_global";
+
 @import "_includes/_header";
 @import "_includes/_footer";
 
@@ -152,9 +160,11 @@ $grid-spacing: {{ site.data.settings.grid_settings.grid_spacing }}px;
 
 
 
+
 // - - - - - - - - - - Section styles
 
-@import "_includes/_portfolio";
+// @import "_includes/_portfolio";
+@import "_includes/_works";
 @import "_includes/_blog";
 
 

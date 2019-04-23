@@ -11,17 +11,17 @@
 	max-width: 90%;
 	padding: 20px;
 
-	@include mq(tabletp) {
+	@include breakpoint(sm) {
 		margin: 30px auto;
 		max-width: calc(70vw + 80px);
 		padding: 40px;
 	}
 
-	@include mq(tabletl) {
+	@include breakpoint(md) {
 		max-width: calc(65vw + 80px);
 	}
 
-	@include mq(laptop) {
+	@include breakpoint(lg) {
 		margin: 40px auto;
 		max-width: calc(60vw + 100px);
 		padding: 50px;
@@ -35,11 +35,11 @@
 .contact-form__item {
 	margin-top: 15px;
 
-	@include mq(tabletp) {
+	@include breakpoint(sm) {
 		margin-top: 20px;
 	}
 
-	@include mq(laptop) {
+	@include breakpoint(lg) {
 		margin-top: 30px;
 	}
 
@@ -60,13 +60,13 @@
 	display: block;
 	font-size: $p-small;
 	font-weight: $bold-weight;
-	color: $text-medium-color;
+	color: $text-regular-color;
 
-	@include mq(tabletp) {
+	@include breakpoint(sm) {
 		font-size: $p-medium;
 	}
 
-	@include mq(laptop) {
+	@include breakpoint(lg) {
 		font-size: $p-large;
 	}
 }
@@ -84,12 +84,12 @@
 	color: $text-dark-color;
 	@include transition(all 0.15s ease-in-out);
 
-	@include mq(tabletp) {
+	@include breakpoint(sm) {
 		padding: 15px 18px;
 		font-size: $p-medium;
 	}
 
-	@include mq(laptop) {
+	@include breakpoint(lg) {
 		font-size: $p-large;
 	}
 

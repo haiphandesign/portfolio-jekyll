@@ -11,17 +11,23 @@
 .header {
 	margin-top: 40px;
 
-	@include mq(tabletp) {
+	@include breakpoint(sm) {
 		margin-top: 50px;
 	}
 
-	@include mq(tabletl) {
+	@include breakpoint(md) {
 		margin-top: 60px;
 	}
 
-	@include mq(laptop) {
+	@include breakpoint(lg) {
 		margin-top: 80px;
 	}
+}
+
+.header__wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .header__logo {
@@ -29,7 +35,7 @@
 	width: $logo-width;
 	max-width: 80%;
 
-	@include mq(tabletp) {
+	@include breakpoint(sm) {
 		float: left;
 		max-width: 50%;
 	}
@@ -41,22 +47,47 @@
 }
 
 .header__title {
-	font-size: $sitetitle-small;
-	font-weight: $sitetitle-weight;
-	letter-spacing: $sitetitle-spacing;
-	line-height: 1;
-	color: $text-dark-color;
+	// font-size: $sitetitle-small;
+	// font-weight: $sitetitle-weight;
+	// letter-spacing: $sitetitle-spacing;
+	// line-height: 1;
+	// color: $text-dark-color;
 
-	&:hover {
-		color: $accent-color;
+	// &:hover {
+	// 	color: $accent-color;
+	// }
+
+	// @include breakpoint(sm) {
+	// 	font-size: $sitetitle-medium;
+	// }
+
+	// @include breakpoint(lg) {
+	// 	font-size: $sitetitle-large;
+	// }
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	cursor: pointer;
+
+	h1 {
+		margin: 0;
 	}
 
-	@include mq(tabletp) {
-		font-size: $sitetitle-medium;
+	p {
+		margin: 0;
+		color: $text-light-color;
+		text-transform: lowercase;
+
+		@include breakpoint(sm) {
+			margin-left: 1rem;
+		}
 	}
 
-	@include mq(laptop) {
-		font-size: $sitetitle-large;
+	@include breakpoint(sm) {
+		align-items: center;
+		flex-direction: row;
 	}
 }
 
@@ -65,12 +96,11 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Menu
 
 .menu {
-	
-	@include mq(tabletl) {
+	@include breakpoint(md) {
 		position: absolute;
 		top: 50%;
 		right: 20px;
-		@include translate(0,-50%);
+		@include translate(0, -50%);
 	}
 }
 
@@ -79,17 +109,17 @@
 	z-index: 100;
 	top: 50%;
 	right: 30px;
-	@include translate(0,-50%);
+	@include translate(0, -50%);
 	cursor: pointer;
 	font-size: 15px;
 	line-height: 20px;
 	color: $text-dark-color;
 
-	@include mq(tabletp) {
+	@include breakpoint(sm) {
 		right: 0;
 	}
-	
-	@include mq(tabletl) {
+
+	@include breakpoint(md) {
 		display: none;
 	}
 }
@@ -101,7 +131,9 @@
 	height: 20px;
 	margin-left: 8px;
 
-	span, span:before, span:after {
+	span,
+	span:before,
+	span:after {
 		content: '';
 		position: absolute;
 		top: 8px;
@@ -123,19 +155,20 @@
 
 .menu--open .menu__toggle__icon {
 
-	span:before, span:after {
+	span:before,
+	span:after {
 		background: $overlay-text-color !important;
 	}
-		
+
 	span {
 		background-color: transparent !important;
 	}
-	
+
 	span:before,
 	span:after {
 		top: 0;
 	}
-	
+
 	span:before {
 		@include rotate(45);
 	}
@@ -152,14 +185,14 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba($overlay-background-color,0.95);
+	background: rgba($overlay-background-color, 0.95);
 	overflow: auto;
 
 	visibility: hidden;
 	opacity: 0;
 	@include transition(all 0.2s ease-in-out);
 
-	@include mq(tabletl) {
+	@include breakpoint(md) {
 		position: relative;
 		background: transparent;
 		visibility: visible;
@@ -179,12 +212,12 @@
 	margin: 0 auto;
 	padding: 30px;
 
-	@include mq(tabletp) {
+	@include breakpoint(sm) {
 		padding: 40px 0 0;
 		max-width: 70%;
 	}
 
-	@include mq(tabletl) {
+	@include breakpoint(md) {
 		max-width: none;
 		margin: 0;
 		padding: 0;
@@ -193,7 +226,7 @@
 
 .menu__list__item {
 
-	@include mq(tabletl) {
+	@include breakpoint(md) {
 		display: inline-block;
 		margin-left: 20px;
 
@@ -213,7 +246,7 @@
 		color: $overlay-accent-color;
 	}
 
-	@include mq(tabletl) {
+	@include breakpoint(md) {
 		padding: 0 0 3px;
 		font-size: $menu-medium;
 		color: $text-dark-color;
@@ -224,14 +257,14 @@
 		}
 	}
 
-	@include mq(laptop) {
+	@include breakpoint(lg) {
 		font-size: $menu-large;
 	}
-	
+
 	&.active-link {
 		color: $overlay-accent-color;
 
-		@include mq(tabletl) {
+		@include breakpoint(md) {
 			color: $text-dark-color;
 			border-color: $accent-color;
 		}
@@ -243,7 +276,7 @@
 	padding: 15px 20px 16px;
 	font-size: 13px;
 
-	@include mq(tabletl) {
+	@include breakpoint(md) {
 		margin-top: 0;
 		padding: 11px 20px 12px;
 		font-size: 15px;
@@ -255,7 +288,7 @@
 	.menu__button {
 		border-radius: 24px;
 
-		@include mq(tabletl) {
+		@include breakpoint(md) {
 			border-radius: 21px;
 		}
 	}

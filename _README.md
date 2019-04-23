@@ -53,7 +53,7 @@ You'll find this inside the `_data` folder – this is where you can set all of 
 
 **Menu settings**
 
-This allows you to set the links inside your menu. Add each one as a list item with a `title` and `url`. When hosting on GitHub Pages, make sure you leave a trailing `/` at the end of links to category pages (e.g. `/blog/` or `/projects/`).
+This allows you to set the links inside your menu. Add each one as a list item with a `title` and `url`. When hosting on GitHub Pages, make sure you leave a trailing `/` at the end of links to category pages (e.g. `/blog/` or `/works/`).
 
 **Footer settings**
 
@@ -116,7 +116,7 @@ Below these options, you'll see options for each typographical element used in t
 
 Inside the `/images/` folder you'll find a few images included with the theme.
 
-The images in the `/demo/` subfolder are used in the demo project, post and page – you delete those if you don't need them.
+The images in the `/demo/` subfolder are used in the demo work, post and page – you delete those if you don't need them.
 
 `favicon.png` – you should replace this with the favicon image you'd like to use for your website.
 
@@ -144,9 +144,9 @@ This is the blog listing page, which shows all your blog posts. You can edit the
 
 ---
 
-## Projects, posts and pages
+## works, posts and pages
 
-These control the main content of your website, and are found inside the `_projects`, `_posts` and `_pages` folders.
+These control the main content of your website, and are found inside the `_works`, `_posts` and `_pages` folders.
 
 Take a look at the demo content inside each folder for full descriptions on what you can do inside these, and to use as a template for your own content.
 

@@ -1,0 +1,23 @@
+.background-grids {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 0;
+    display: flex;
+    .background-grid {
+        border: .5px solid $grid-color;
+        width: 100%;
+        height: 100%;
+        &:first-of-type {
+            border-left-width: 1px;
+        }
+        &:last-of-type {
+            border-right-width: 1px;
+        }
+    }
+}

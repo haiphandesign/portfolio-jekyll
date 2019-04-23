@@ -17,32 +17,38 @@ featured_image: /images/social.jpg
 
 </section>
 
-<section class="portfolio">
+<section id="works-gallery">
 
-	<div class="content-wrap portfolio-wrap">
+	<div class="wrap-fluid">
 
-		{% for project in site.projects reversed %}
+		<div class="row">
 
-		<div class="portfolio-item">
+				{% for work in site.works reversed %}
+				{% if work.categories contains "featured" %}
 
-			<a class="portfolio-item__link" href="{{ project.url }}">
+				<div class="col-md-6 col-sm-12">
 
-				<div class="portfolio-item__image">
-					<img src="{{ project.featured_image  }}" alt="{{ project.title }}">
+					<a href="{{ work.url }}">
+
+						<div class="works-gallery-item works-{{ work.slug }}" style="background-image: url('/images/works/{{ work.slug }}/home.jpg');">
+
+							<div class="works-gallery-item-info">
+
+								<h2>{{ work.title }}</h2>
+								<p>{{ work.subtitle }}</p>
+
+							</div>
+
+						</div>
+
+					</a>
+
 				</div>
 
-				<div class="portfolio-item__content">
-					<div class="portfolio-item__info">
-						<h2 class="portfolio-item__title">{{ project.title }}</h2>
-						<p class="portfolio-item__subtitle">{{ project.subtitle }}</p>
-					</div>
-				</div>
-
-			</a>
+				{% endif %}
+				{% endfor %}
 
 		</div>
-
-		{% endfor %}
 
 	</div>
 
