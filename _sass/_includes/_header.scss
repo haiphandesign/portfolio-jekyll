@@ -6,31 +6,27 @@
 
 
 
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header
+// Header
 
 .header {
-	margin-top: 40px;
-
-	@include breakpoint(sm) {
-		margin-top: 50px;
-	}
+	margin: 2rem auto;
 
 	@include breakpoint(md) {
-		margin-top: 60px;
+		margin: 3rem auto;
 	}
 
 	@include breakpoint(lg) {
-		margin-top: 80px;
+		margin: 4rem auto;
 	}
 }
 
-.header-wrap {
+.header--wrap {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.header__logo {
+.header--logo {
 	display: block;
 	width: $logo-width;
 	max-width: 80%;
@@ -41,39 +37,17 @@
 	}
 }
 
-.header__logo__img {
+.header--logo-img {
 	width: 100%;
 	height: auto;
 }
 
-.header__title {
-	// font-size: $sitetitle-small;
-	// font-weight: $sitetitle-weight;
-	// letter-spacing: $sitetitle-spacing;
-	// line-height: 1;
-	// color: $text-dark-color;
-
-	// &:hover {
-	// 	color: $accent-color;
-	// }
-
-	// @include breakpoint(sm) {
-	// 	font-size: $sitetitle-medium;
-	// }
-
-	// @include breakpoint(lg) {
-	// 	font-size: $sitetitle-large;
-	// }
-
+.header--title {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
 	cursor: pointer;
-
-	h1 {
-		margin: 0;
-	}
 
 	p {
 		margin: 0;
@@ -85,15 +59,22 @@
 		}
 	}
 
+	&:hover {
+		p {
+			color: $accent-color;
+		}
+	}
+
 	@include breakpoint(sm) {
 		align-items: center;
 		flex-direction: row;
 	}
+	
 }
 
 
 
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Menu
+// Menu
 
 .menu {
 	@include breakpoint(lg) {
@@ -104,7 +85,7 @@
 	}
 }
 
-.menu__toggle {
+.menu--toggle {
 	position: absolute;
 	z-index: 100;
 	top: 50%;
@@ -124,7 +105,7 @@
 	}
 }
 
-.menu__toggle__icon {
+.menu--toggle-icon {
 	float: right;
 	position: relative;
 	width: 24px;
@@ -153,7 +134,11 @@
 	}
 }
 
-.menu--open .menu__toggle__icon {
+.menu--open {
+	overflow: hidden;
+}
+
+.menu--open .menu--toggle-icon {
 
 	span:before,
 	span:after {
@@ -178,7 +163,7 @@
 	}
 }
 
-.menu__wrap {
+.menu--wrap {
 	position: fixed;
 	z-index: 90;
 	top: 0;
@@ -202,12 +187,12 @@
 	}
 }
 
-.menu--open .menu__wrap {
+.menu--open .menu--wrap {
 	visibility: visible;
 	opacity: 1;
 }
 
-.menu__list {
+.menu--list {
 	list-style: none;
 	margin: 0 auto;
 	padding: 30px 35px;
@@ -224,7 +209,39 @@
 	}
 }
 
-.menu__list__item {
+.menu--list-item {
+
+	a {
+		text-transform: lowercase;
+		font-size: $menu-small;
+		font-weight: $menu-weight;
+		color: $overlay-text-color;
+		padding: 10px 0;
+	
+		&:hover {
+			color: $overlay-accent-color;
+		}
+	
+		@include breakpoint(lg) {
+			padding: 0 0 3px;
+			font-size: $menu-large;
+			color: $text-dark-color;
+			border-bottom: 2px solid transparent;
+	
+			&:hover {
+				color: $accent-color;
+			}
+		}
+	
+		&.active-link {
+			color: $overlay-accent-color;
+	
+			@include breakpoint(lg) {
+				color: $text-dark-color;
+				border-color: $accent-color;
+			}
+		}
+	}
 
 	@include breakpoint(lg) {
 		display: inline-block;
@@ -236,39 +253,7 @@
 	}
 }
 
-.menu__list__item__link {
-	text-transform: lowercase;
-	font-size: $menu-small;
-	font-weight: $menu-weight;
-	color: $overlay-text-color;
-	padding: 10px 0;
-
-	&:hover {
-		color: $overlay-accent-color;
-	}
-
-	@include breakpoint(lg) {
-		padding: 0 0 3px;
-		font-size: $menu-large;
-		color: $text-dark-color;
-		border-bottom: 2px solid transparent;
-
-		&:hover {
-			color: $accent-color;
-		}
-	}
-
-	&.active-link {
-		color: $overlay-accent-color;
-
-		@include breakpoint(lg) {
-			color: $text-dark-color;
-			border-color: $accent-color;
-		}
-	}
-}
-
-.menu__button {
+.menu--button {
 	margin-top: 15px;
 	padding: 15px 20px 16px;
 	font-size: 13px;
@@ -282,7 +267,7 @@
 
 .buttons--circular {
 
-	.menu__button {
+	.menu--button {
 		border-radius: 24px;
 
 		@include breakpoint(lg) {

@@ -17,32 +17,37 @@ featured_image: /images/social.jpg
 
 </section>
 
-<section class="portfolio">
 
-	<div class="wrap_fluid portfolio-wrap">
+<section id="works-gallery">
 
-		{% for work in site.works reversed limit: 4 %}
+	<div class="wrap-fluid">
 
-		<div class="portfolio-item">
+		<div class="row">
 
-			<a class="portfolio-item__link" href="{{ work.url }}">
+				{% for work in site.works reversed %}
 
-				<div class="portfolio-item__image">
-					<img src="{{ work.featured_image  }}" alt="{{ work.title }}">
+				<div class="col-md-6 col-sm-12">
+
+					<a href="{{ work.url }}">
+
+						<div class="works-gallery-item works-{{ work.slug }}" style="background-image: url('/images/works/{{ work.slug }}/home.jpg');">
+
+							<div class="works-gallery-item-info">
+
+								<h2>{{ work.title }}</h2>
+								<p>{{ work.subtitle }}</p>
+
+							</div>
+
+						</div>
+
+					</a>
+
 				</div>
 
-				<div class="portfolio-item__content">
-					<div class="portfolio-item__info">
-						<h2 class="portfolio-item__title">{{ work.title }}</h2>
-						<p class="portfolio-item__subtitle">{{ work.subtitle }}</p>
-					</div>
-				</div>
-
-			</a>
+				{% endfor %}
 
 		</div>
-
-		{% endfor %}
 
 	</div>
 

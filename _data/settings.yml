@@ -1,6 +1,7 @@
 basic_settings:
   site_title: Hai Phan.
-  site_description: Multidisciplinary Designer 
+  site_description: Multidisciplinary Designer
+  site_email: work@haiphan.design
   favicon_image: /images/favicon.png
 
 header_settings:
@@ -15,8 +16,10 @@ menu_settings:
       url: '/blog/'
     - title: 'About'
       url: '/about'
-    - title: 'Contact'
-      url: '/contact'
+    # - title: 'Contact'
+    #   url: '/contact'
+    - title: 'Lab'
+      url: '/lab'
 
 footer_settings:
   logo_image: 
@@ -26,12 +29,6 @@ footer_settings:
 grid_settings:
   overlay_opacity: 0.8
   grid_spacing: 10
-
-contact_settings:
-  form_action: 'https://formspree.io/your@email.com'
-  confirmation_url: '/thanks'
-  email_subject: 'Contact form submission'
-  send_button_text: 'Send Message'
 
 social_settings:
   facebook_url: 'https://www.facebook.com/jekyllthemes/'
@@ -90,8 +87,8 @@ font_settings:
     letter_spacing: -0.02
   menu:
     small_size: 3
-    medium_size: .75
-    large_size: 1
+    medium_size: 1
+    large_size: 1.25
     weight: normal
     letter_spacing: 0
   grid_item_title:
@@ -112,42 +109,42 @@ font_settings:
     large_size: 3
     weight: 700
     letter_spacing: -0.02
-    line_height: 1.2
+    line_height: 1.5
   h2:
-    small_size: 22
-    medium_size: 30
-    large_size: 35
+    small_size: 2
+    medium_size: 2.25
+    large_size: 2.5
     weight: 700
     letter_spacing: -0.02
-    line_height: 1.2
+    line_height: 1.5
   h3:
-    small_size: 22
-    medium_size: 25
-    large_size: 30
-    weight: 600
+    small_size: 1.5
+    medium_size: 1.75
+    large_size: 2
+    weight: 700
     letter_spacing: -0.02
-    line_height: 1.3
+    line_height: 1.5
   h4:
     small_size: 17
     medium_size: 22
     large_size: 22
     weight: 700
     letter_spacing: 0
-    line_height: 1.6
+    line_height: 1.5
   h5:
     small_size: 17
     medium_size: 20
     large_size: 20
     weight: 700
     letter_spacing: 0
-    line_height: 1.6
+    line_height: 1.5
   h6:
     small_size: 17
     medium_size: 20
     large_size: 20
     weight: 700
     letter_spacing: 0
-    line_height: 1.6
+    line_height: 1.5
   p:
     small_size: 1
     medium_size: 1
@@ -161,7 +158,7 @@ font_settings:
     large_size: 45
     weight: 300
     letter_spacing: -0.02
-    line_height: 1.6
+    line_height: 1.5
   buttons:
     weight: 600
     letter_spacing: 0

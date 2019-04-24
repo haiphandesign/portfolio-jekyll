@@ -77,37 +77,37 @@ $h1-weight: {{ site.data.settings.font_settings.h1.weight }};
 $h1-spacing: {{ site.data.settings.font_settings.h1.letter_spacing }}rem;
 $h1-lineheight: {{ site.data.settings.font_settings.h1.line_height }};
 
-$h2-small: {{ site.data.settings.font_settings.h2.small_size }}px;
-$h2-medium: {{ site.data.settings.font_settings.h2.medium_size }}px;
-$h2-large: {{ site.data.settings.font_settings.h2.large_size }}px;
+$h2-small: {{ site.data.settings.font_settings.h2.small_size }}rem;
+$h2-medium: {{ site.data.settings.font_settings.h2.medium_size }}rem;
+$h2-large: {{ site.data.settings.font_settings.h2.large_size }}rem;
 $h2-weight: {{ site.data.settings.font_settings.h2.weight }};
 $h2-spacing: {{ site.data.settings.font_settings.h2.letter_spacing }}em;
 $h2-lineheight: {{ site.data.settings.font_settings.h2.line_height }};
 
-$h3-small: {{ site.data.settings.font_settings.h3.small_size }}px;
-$h3-medium: {{ site.data.settings.font_settings.h3.medium_size }}px;
-$h3-large: {{ site.data.settings.font_settings.h3.large_size }}px;
+$h3-small: {{ site.data.settings.font_settings.h3.small_size }}rem;
+$h3-medium: {{ site.data.settings.font_settings.h3.medium_size }}rem;
+$h3-large: {{ site.data.settings.font_settings.h3.large_size }}rem;
 $h3-weight: {{ site.data.settings.font_settings.h3.weight }};
 $h3-spacing: {{ site.data.settings.font_settings.h3.letter_spacing }}em;
 $h3-lineheight: {{ site.data.settings.font_settings.h3.line_height }};
 
-$h4-small: {{ site.data.settings.font_settings.h4.small_size }}px;
-$h4-medium: {{ site.data.settings.font_settings.h4.medium_size }}px;
-$h4-large: {{ site.data.settings.font_settings.h4.large_size }}px;
+$h4-small: {{ site.data.settings.font_settings.h4.small_size }}rem;
+$h4-medium: {{ site.data.settings.font_settings.h4.medium_size }}rem;
+$h4-large: {{ site.data.settings.font_settings.h4.large_size }}rem;
 $h4-weight: {{ site.data.settings.font_settings.h4.weight }};
 $h4-spacing: {{ site.data.settings.font_settings.h4.letter_spacing }}em;
 $h4-lineheight: {{ site.data.settings.font_settings.h4.line_height }};
 
-$h5-small: {{ site.data.settings.font_settings.h5.small_size }}px;
-$h5-medium: {{ site.data.settings.font_settings.h5.medium_size }}px;
-$h5-large: {{ site.data.settings.font_settings.h5.large_size }}px;
+$h5-small: {{ site.data.settings.font_settings.h5.small_size }}rem;
+$h5-medium: {{ site.data.settings.font_settings.h5.medium_size }}rem;
+$h5-large: {{ site.data.settings.font_settings.h5.large_size }}rem;
 $h5-weight: {{ site.data.settings.font_settings.h5.weight }};
 $h5-spacing: {{ site.data.settings.font_settings.h5.letter_spacing }}em;
 $h5-lineheight: {{ site.data.settings.font_settings.h5.line_height }};
 
-$h6-small: {{ site.data.settings.font_settings.h6.small_size }}px;
-$h6-medium: {{ site.data.settings.font_settings.h6.medium_size }}px;
-$h6-large: {{ site.data.settings.font_settings.h6.large_size }}px;
+$h6-small: {{ site.data.settings.font_settings.h6.small_size }}rem;
+$h6-medium: {{ site.data.settings.font_settings.h6.medium_size }}rem;
+$h6-large: {{ site.data.settings.font_settings.h6.large_size }}rem;
 $h6-weight: {{ site.data.settings.font_settings.h6.weight }};
 $h6-spacing: {{ site.data.settings.font_settings.h6.letter_spacing }}em;
 $h6-lineheight: {{ site.data.settings.font_settings.h6.line_height }};
@@ -153,11 +153,9 @@ $grid-spacing: {{ site.data.settings.grid_settings.grid_spacing }}px;
 @import "_includes/_footer";
 
 @import "_includes/_content";
-@import "_includes/_socials";
+@import "_includes/_lab";
 @import "_includes/_gallery";
 @import "_includes/_syntax";
-@import "_includes/_contact-form";
-
 
 
 
