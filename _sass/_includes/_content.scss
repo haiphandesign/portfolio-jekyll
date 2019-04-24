@@ -18,6 +18,13 @@
 	}
 }
 
+.content--featured-images {
+	height: 75vh;
+    width: 100%;
+	object-fit: cover;
+	margin: 2rem auto;
+}
+
 .content-wrap {
 
 	@include breakpoint(sm) {
@@ -31,13 +38,10 @@
 	h1, h2, h3, h4, h5, h6, p, ul, ol {
 		margin-left: auto;
 		margin-right: auto;
-		padding-left: 30px;
-		padding-right: 30px;
+		padding: 0 30px;
 		max-width: 500px;
 
 		@include breakpoint(sm) {
-			padding-left: 0;
-			padding-right: 0;
 			max-width: 70%;
 		}
 
@@ -46,7 +50,7 @@
 		}
 
 		@include breakpoint(lg) {
-			max-width: 60%;
+			max-width: 1140px;
 		}
 	}
 
@@ -69,7 +73,7 @@
 		}
 
 		@include breakpoint(lg) {
-			max-width: 60%;
+			max-width: 1140px;
 		}
 	}
 
@@ -109,16 +113,16 @@
 
 		@include breakpoint(sm) {
 			margin: 30px auto;
-			max-width: 70%;
+			max-width: calc(70% - 60px);
 		}
 
 		@include breakpoint(md) {
-			max-width: 65%;
+			max-width: calc(65% - 60px);
 		}
 
 		@include breakpoint(lg) {
-			margin: 40px auto;
-			max-width: 60%;
+			margin: 2rem auto;
+			max-width: calc(1140px - 60px);
 		}
 	}
 

@@ -150,8 +150,8 @@ font_settings:
     line_height: 1.6
   p:
     small_size: 1
-    medium_size: 1.25
-    large_size: 1.5
+    medium_size: 1
+    large_size: 1.25
     weight: 400
     letter_spacing: 0
     line_height: 1.5
