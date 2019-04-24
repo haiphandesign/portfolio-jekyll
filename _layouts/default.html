@@ -63,10 +63,14 @@
 	<div class="page-loader"></div>
 
 	
-	<div class="page" data-page-title="{% if page.url == "/" %}{{ site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}">
+	<div class="page">
 
-		{{ content }}
+		<div class="page-content" data-page-title="{% if page.url == "/" %}{{ site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}">
 
+			{{ content }}
+
+		</div>
+	
 	</div>
 
 

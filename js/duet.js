@@ -3061,7 +3061,7 @@ function ($) {
 
 		var s = n.getState();
 		
-        $("body").addClass("loading"), $(".page-loader").load(s.hash + " .page__content", function () {
+        $("body").addClass("loading"), $(".page-loader").load(s.hash + " .page-content", function () {
 
             $("body, html").animate({
                 scrollTop: 0
@@ -3070,7 +3070,7 @@ function ($) {
 			var n = 400;
 			
             setTimeout(function () {
-                $(".page .page__content").remove(), $(".page-loader .page__content").appendTo(".page"), $("body").attr("data-page-url", window.location.pathname), e = $("body").attr("data-page-url"), i = $(".page__content").attr("data-page-title"), document.title = i, t()
+                $(".page .page-content").remove(), $(".page-loader .page-content").appendTo(".page"), $("body").attr("data-page-url", window.location.pathname), e = $("body").attr("data-page-url"), i = $(".page-content").attr("data-page-title"), document.title = i, t()
 			},
 			n
 			)

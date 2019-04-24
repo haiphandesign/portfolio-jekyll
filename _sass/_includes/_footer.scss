@@ -27,7 +27,7 @@
 }
 
 .footer--title {
-
+	color: $text-dark-color;
 }
 
 .footer--text {
@@ -41,7 +41,7 @@
 	justify-content: space-between;
 	margin-top: 2rem;
 	font-size: .75rem;
-	color: $text-light-color;
+	color: $text-dark-color;
 
 	a {
 		margin-left: 10px;
