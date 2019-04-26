@@ -197,23 +197,22 @@
 .image-wrap,
 .video-wrap {
 	position: relative;
-	max-width: 90%;
-	margin: 20px auto;
+	width: 100%;
+	max-width: 100%;
+	margin: 1rem auto;
 
 	@include breakpoint(sm) {
-		margin: 30px auto;
+		width: calc(100% - 10vw);
+		margin: 1.5rem auto;
 	}
 
 	@include breakpoint(lg) {
-		margin: 40px auto;
-	}
-
-	&:first-child {
-		margin-top: 0;
+		margin: 2rem auto;
 	}
 }
 
 .image-wrap img {
+	width: 100%;
 	margin: 0 auto;
 }
 

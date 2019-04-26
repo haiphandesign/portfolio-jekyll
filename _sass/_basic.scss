@@ -50,7 +50,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-	margin-top: 1rem;
+	margin-top: 2rem;
 	font-size: $h2-small;
 	font-weight: $h2-weight;
 	line-height: $h2-lineheight;
@@ -66,7 +66,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-	margin-top: 1rem;
+	margin-top: 2rem;
 	font-size: $h3-small;
 	font-weight: $h3-weight;
 	line-height: $h3-lineheight;
@@ -82,7 +82,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-	margin-top: 1rem;
+	margin-top: 2rem;
 	font-size: $h4-small;
 	font-weight: $h4-weight;
 	line-height: $h4-lineheight;
@@ -98,7 +98,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-	margin-top: 1rem;
+	margin-top: 2rem;
 	font-size: $h5-small;
 	font-weight: $h5-weight;
 	line-height: $h5-lineheight;
@@ -114,7 +114,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-	margin-top: 1rem;
+	margin-top: 2rem;
 	font-size: $h6-small;
 	font-weight: $h6-weight;
 	line-height: $h6-lineheight;
@@ -344,34 +344,15 @@ body.loading {
 	}
 }
 
-.page,
-.page__content {
-	float: left;
-	clear: both;
-	width: 100%;
-}
-
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Page sections
 
 section {
-	margin: 1rem auto;
+	margin: 2rem auto;
 
 	@include breakpoint(md) {
-		margin: 2 auto;
-	}
-
-	@include breakpoint(lg) {
-		margin: 4rem auto;
-	}
-
-	&:first-child {
-		margin-top: 0;
-	}
-
-	&:last-child {
-		margin-bottom: 0;
+		margin: 3rem auto;
 	}
 }
 
@@ -379,11 +360,7 @@ section {
 	position: relative;
 	margin: 0 auto;
 	padding: 0 30px;
-	max-width: 500px;
-
-	@include breakpoint(sm) {
-		max-width: 70%;
-	}
+	max-width: 100%;
 
 	@include breakpoint(md) {
 		max-width: 65%;
@@ -397,14 +374,13 @@ section {
 .wrap-fluid {
 	position: relative;
 	margin: 0 auto;
-	padding: 0 5vw;
+	padding: 0 30px;
 	max-width: 100%;
-}
-
-.row {
 
 	@include breakpoint(md) {
-		margin-right: -30px;
-		margin-left: -30px;
+		position: relative;
+		margin: 0 auto;
+		padding: 0 5vw;
+		max-width: 100%;
 	}
 }

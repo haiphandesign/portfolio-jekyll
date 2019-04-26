@@ -10,27 +10,46 @@
 	@include breakpoint(md) {
 		margin-bottom: -30px;
 	}
+
+	.wrap-fluid {
+		display: flex;
+		flex-wrap: wrap;
+
+		@include breakpoint(md) {
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+	}
 }
 
-.works-gallery-item {
-	width: 100%;
-	height: 50vh;
+.works-gallery--item {
+	max-width: 100%;
 	display: flex;
-
-	background: {
-		color: #ddd;
-		size: cover;
-		position: center;
-	}
+	flex: 0 0 100%;
+	padding: 0;
 
 	margin-bottom: 5vw;
 	transition: all .5s ease-in-out;
 
 	@include breakpoint(md) {
+		max-width: 50%;
+		flex: 0 0 50%;
 		margin-bottom: 30px;
+		padding: 0 15px;
 	}
 
-	.works-gallery-item-info {
+	&-bg {
+		width: 100%;
+		height: 50vh;
+
+		background: {
+			color: #ddd;
+			size: cover;
+			position: center;
+		}
+	}
+
+	&-info {
 		display: flex;
 		align-items: center;
 		justify-content: center;

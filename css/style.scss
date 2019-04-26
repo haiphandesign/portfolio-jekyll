@@ -145,14 +145,13 @@ $grid-spacing: {{ site.data.settings.grid_settings.grid_spacing }}px;
 
 @import "_basic";
 
-@import url('bootstrap-grid.css');
-
 @import "_includes/_global";
 
 @import "_includes/_header";
 @import "_includes/_footer";
 
 @import "_includes/_content";
+@import "_includes/_about";
 @import "_includes/_lab";
 @import "_includes/_gallery";
 @import "_includes/_syntax";

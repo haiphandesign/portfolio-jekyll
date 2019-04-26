@@ -20,34 +20,30 @@ featured_image: /images/social.jpg
 
 	<div class="wrap-fluid">
 
-		<div class="row">
+		{% for work in site.works reversed %}
+		{% if work.categories contains "featured" %}
 
-				{% for work in site.works reversed %}
-				{% if work.categories contains "featured" %}
+		<div class="works-gallery--item works-{{ work.slug }}">
 
-				<div class="col-md-6 col-sm-12">
+			<div class="works-gallery--item-bg" style="background-image: url('/images/works/{{ work.slug }}/home.jpg');">
 
-					<a href="{{ work.url }}">
+				<a href="{{ work.url }}">
 
-						<div class="works-gallery-item works-{{ work.slug }}" style="background-image: url('/images/works/{{ work.slug }}/home.jpg');">
+					<div class="works-gallery--item-info">
 
-							<div class="works-gallery-item-info">
+						<h2>{{ work.title }}</h2>
+						<p>{{ work.subtitle }}</p>
 
-								<h2>{{ work.title }}</h2>
-								<p>{{ work.subtitle }}</p>
+					</div>
 
-							</div>
+				</a>
 
-						</div>
-
-					</a>
-
-				</div>
-
-				{% endif %}
-				{% endfor %}
+			</div>
 
 		</div>
+
+		{% endif %}
+		{% endfor %}
 
 	</div>
 

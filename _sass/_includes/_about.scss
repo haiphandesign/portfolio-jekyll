@@ -1,0 +1,99 @@
+.page-about {
+
+    .wrap {
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+
+        @include breakpoint(md) {
+            flex-direction: row;
+            margin-top: 1rem;
+        }
+
+        .page-about {
+
+            &--left {
+                width: 100%;
+
+                @include breakpoint(md) {
+                    width: calc(100% / 3 * 2);
+                }
+            }
+
+            &--right {
+                width: 100%;
+
+                @include breakpoint(md) {
+                    width: calc(100% / 3);
+                }
+            }
+
+            &--item {
+                margin: 2.5rem auto;
+
+                @include breakpoint(md) {
+                    margin: 4rem auto;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &-half {
+                    width: 100%;
+                    margin: 0 auto 2.5rem;
+                    float: left;
+
+                    @include breakpoint(md) {
+                        width: 50%;
+                    }
+                }
+
+                h6 {
+                    text-transform: uppercase;
+                    letter-spacing: .2em;
+                    margin-right: 30px;
+                    margin-left: 30px;                }
+
+                p {
+                    hyphens: auto;
+                    margin-right: 30px;
+                    margin-left: 30px;
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    li {
+                        margin: 0 0 1rem;
+                        white-space: nowrap;
+
+                        p {
+                            &:nth-child(2) {
+                                color: $text-light-color;
+                                font-size: .9em;
+                                margin-top: .25rem;
+                            }
+                        }
+                        br {
+                            @include breakpoint(md) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    #about-services {
+
+        ul {
+            columns: 2;
+        }
+    }    
+
+}
